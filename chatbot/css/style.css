@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background: #1e2230;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.message {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.bot {
+  background: #d6e8ff;
+}
+
+.bot::before {
+  content: "Nova : ";
+  font-weight: bold;
+}
+
+.user {
+  background: #1a73e8;
+  color: white;
+  margin-left: auto;
+}
+
+input[type="text"],
+textarea {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  background: #eef5ff;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1a73e8;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b57b8;
+}

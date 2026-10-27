@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/avatar.png" alt="Avatar du chatbot" width="64" height="64">
+    <h1>Chatbot</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Conversation</h2>
+      <p class="message bot">Bonjour ! Comment puis-je vous aider ?</p>
+      <p class="message user">Bonjour, quels sont vos services ?</p>
+
+      <form method="post" action="#">
+        <label for="message">Votre message</label>
+        <input type="text" id="message" name="message" required maxlength="300"
+               placeholder="Écrivez votre message...">
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Informations</h2>
+      <table border="1">
+        <thead>
+          <tr><th>Service</th><th>Disponibilité</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Questions générales</td><td>24h/24</td></tr>
+          <tr><td>Support technique</td><td>9h - 18h</td></tr>
+        </tbody>
+      </table>
+
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Votre avis</legend>
+          <p>Note :</p>
+          <p>
+            <input type="radio" id="note1" name="note" value="1" required>
+            <label for="note1">1</label>
+            <input type="radio" id="note2" name="note" value="2">
+            <label for="note2">2</label>
+            <input type="radio" id="note3" name="note" value="3">
+            <label for="note3">3</label>
+            <input type="radio" id="note4" name="note" value="4">
+            <label for="note4">4</label>
+            <input type="radio" id="note5" name="note" value="5">
+            <label for="note5">5</label>
+          </p>
+          <p>
+            <label for="commentaire">Commentaire (facultatif)</label><br>
+            <textarea id="commentaire" name="commentaire" rows="3" cols="30" maxlength="200"></textarea>
+          </p>
+          <button type="submit">Envoyer mon avis</button>
+        </fieldset>
+      </form>
+    </aside>
+  </main>
+</body>
+</html>
